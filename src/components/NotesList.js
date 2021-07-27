@@ -6,6 +6,9 @@ const NotesList = () => {
     return (
         <div className="notes-list">
             <Note/>
+            <Note/>
+            <Note/>
+            <Note/>
         </div>
     )
 }
