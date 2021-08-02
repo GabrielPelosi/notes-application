@@ -3,7 +3,7 @@ import React from 'react'
 const Pagination = ({page, onPageChange}) => {
     return (
         <div>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center m-3">
                 <nav>
                     <ul className="pagination">
                         <li className={`page-item ${page.first ? 'disabled' : ''} `}>

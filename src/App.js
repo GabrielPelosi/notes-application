@@ -39,7 +39,7 @@ const App = () => {
     
     const fetchNotes = async () => {
       setLoading(true)
-      const res = await axios.get(`${BASE_URL}/notes?page=${activePAge}&size=9&sort=createdDateTime,desc`)
+      const res = await axios.get(`${BASE_URL}/notes?page=${activePAge}&size=12&sort=createdDateTime,desc`)
       setNotes(res.data)
       setLoading(false)
     }
@@ -48,14 +48,14 @@ const App = () => {
 
   return (loading)? (
     <div className="container">
-      <p>Notes</p>
+      <h2 className="m-1">Mural Online!</h2>
       <Loading/>
       <Pagination page={notes} onPageChange={changePage} />
       <AddNote />
     </div>
   ): (
     <div className="container">
-      <p>Notes</p>
+      <h2 className="m-1">Mural Online!</h2>
       {
         notes.totalPages > 0 ? <NoteList notes={notes.content} />: "Sem posts por enquanto :("
       }
