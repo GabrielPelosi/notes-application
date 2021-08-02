@@ -2,13 +2,13 @@ import React from 'react'
 import Note from './Note'
 
 
-const NotesList = () => {
+const NotesList = ({ notes }) => {
     return (
         <div className="notes-list">
-            <Note/>
-            <Note/>
-            <Note/>
-            <Note/>
+            {
+                notes.map((note) => (<Note id={note.id} text={note.noteDescription} 
+                                    sender={note.noteSender} recipient={note.noteRecipient} createdDate={note.createdDate} />))
+            }
         </div>
     )
 }

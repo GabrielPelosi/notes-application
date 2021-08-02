@@ -1,13 +1,15 @@
 import React from 'react'
 import { BsFillChatDotsFill } from 'react-icons/bs'
 
-const Note = () => {
+const Note = ({ id, text, sender, recipient, createdDate }) => {
     return (
         <div className="note">
-            <span>Hello World!</span>
+            <span>{text}</span>
             <div className="note-footer">
-                <small>23/07/0690</small>
-                <BsFillChatDotsFill/>
+                <small>De: {sender}</small>
+                <small>Para: {recipient}</small>
+                <small>{createdDate}</small>
+                <BsFillChatDotsFill />
             </div>
         </div>
     )
