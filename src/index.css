@@ -11,7 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.id-style{
+  margin-left:1px;
+  margin-bottom: -40px;
+}
 .note {
   background-color:#fef68a;
   border-radius: 10px;

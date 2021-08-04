@@ -1,0 +1,49 @@
+.delete-input{
+    outline: none;
+    background-color:white;
+    margin-top: 30px;
+}
+
+.float-container {
+    padding: 40px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+
+.float-child-scroller{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    overflow-y:scroll;
+    height: 600px;
+}
+
+.form-delete{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: #67b3d7cc;
+    border: none;
+    border-radius:20px;
+}
+
+.delete-button{
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 55px;;
+    border: none;
+    outline: none;
+    border-radius:20px;
+    padding: 10px;
+    background-color: rgb(98, 218, 248);
+}
+
+
+.delete-label{
+    margin-top: 50px;
+}

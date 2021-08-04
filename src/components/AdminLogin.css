@@ -1,0 +1,41 @@
+.form-div-position{
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+}
+
+.form-style{
+    background-color: #67b3d7cc;
+    padding: 60px;
+    width: 30%;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.admin-input{
+    background-color: #FFF;
+    margin: 15px;
+    width:200px;
+    outline: none;
+    border: none;
+    width:70%;
+    padding: 5px;
+    
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+
+
+.btn-login-admin{
+    color: white;
+    background-color: #7992e2;
+    border:none;
+    border-radius: 5px;
+    width:60px;
+    height:35px;
+    margin-top: 10px;
+}
