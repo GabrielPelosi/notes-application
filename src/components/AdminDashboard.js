@@ -6,6 +6,7 @@ import { setupInterceptorsTo } from '../util/interceptors'
 import NoteList from './NotesList'
 import './AdminDashboard.css'
 import history from './../util/histoyConfig'
+import Search from './Search';
 
 setupInterceptorsTo(axios)
 
@@ -57,6 +58,8 @@ const AdminDashboard = ({ props }) => {
         })
     }
 
+    const [searchText, setSearchText] = useState("")
+
     return (localStorage.getItem('jwt-token') !== null) ? (
         <div className="float-container">
             <h4>Admin dashboard!</h4>
@@ -67,8 +70,9 @@ const AdminDashboard = ({ props }) => {
                     <button type="submit" className="delete-button">Deletar Nota</button>
                 </form>
             </div>
+            <Search handleSearchNote={setSearchText}/>
             <div className="float-child-scroller">
-                <NoteList notes={notes} />
+                <NoteList notes={ notes.filter((note) => note.noteDescription.toLowerCase().includes(searchText.toLocaleLowerCase())) } />
             </div>
         </div>
     ) : <div>Sai fora doidao</div>

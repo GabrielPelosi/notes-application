@@ -86,13 +86,14 @@ textarea:focus {
 	cursor: pointer;
 }
 
-input{
+.note input{
   background-color: #67d7cc;
   border: none;
 	border-radius: 15px;
   margin-bottom: 5px;
   padding: 5px 10px 5px 10px;
-  width: 100px;
+  width: 150px;
+  outline: none;
 }
 
 
