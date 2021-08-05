@@ -1,2 +1,3 @@
-# notes-application
-front-end application for notes project
+# Notes app
+
+Frontend application developed using reactJS
